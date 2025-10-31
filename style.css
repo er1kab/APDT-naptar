@@ -1,0 +1,276 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+
+
+body {
+  font-family: 'Courier', monospace;
+  background-image: url('media/rightside.jpeg');
+  width: 1024px;
+  /* background-repeat: repeat-y;*/
+  background-attachment: fixed;
+  background-size: 1472px 1954px;
+  /* */
+  background-position: center;
+  cursor: url('media/apdtcur.png') 15 7.5, auto;
+
+}
+
+.apgif {
+  width: auto;
+  height: auto;
+  position: absolute;
+  display: block;
+  top: 320px;
+  left: 20px;
+  justify-content: center;
+  margin-right: 20px;
+  /*:5px solid black;*/
+
+}
+
+.apgif img {
+  filter: drop-shadow(0 0 11px rgb(62, 4, 4));
+}
+
+.apgif:hover img {
+  filter: drop-shadow(0 0 10px rgb(210, 101, 101));
+}
+
+.apgif2 {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 320px;
+  right: 8px;
+  justify-content: center;
+  margin-right: 20px;
+  /*:5px solid black;*/
+}
+
+.apgif2 img {
+  filter: drop-shadow(0 0 11px rgb(62, 4, 4));
+}
+
+.apgif2:hover img {
+  filter: drop-shadow(0 0 10px rgb(210, 101, 101));
+}
+
+.kozep {
+
+  gap: 10px;
+  padding: 10px;
+  height: max-content;
+  /* border:5px solid black; */
+  position: absolute;
+  top: 300px;
+  left: auto;
+  z-index: 3
+}
+
+.container {
+
+  display: flex;
+  justify-content: center;
+  /* align-items:center; */
+  /*  flex-wrap:nowrap;*/
+  width: 964;
+  height: max-content;
+
+}
+
+
+
+.marquee {
+  width: 300px;
+  height: 600px;
+  margin: 10px auto 10px 10px;
+  border: 10px solid black;
+}
+
+.h1 {
+  color: #1e3a37;
+  text-align: center;
+  font-weight: bold;
+  font-size: 80px;
+  text-decoration: underline;
+}
+
+.honapbox {
+  width: 600px;
+  height: 300px;
+  background-image: url('media/red.jpg');
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 30px auto;
+  border: 5px solid
+    /*#aabfb1*/
+    #938472;
+  BORDER-radius: 8px;
+}
+
+.honapnev {
+  color: black;
+  text-align: center;
+  font-weight: 900;
+  margin: 27px auto;
+  font-size: 30px;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  margin: 40px auto 0px;
+}
+
+.napok {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin: 0px 10px 10px 10px;
+  padding: 1rem 0;
+}
+
+.kurvajunius {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 7px;
+  margin: 0px 10px 7px 10px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+
+.szerda {
+  display: inline-block;
+  color: #f0e1ed;
+  text-shadow: 0 0 5px #972974, 0 0 10px #972974, 0 0 20px #972974, 0 0 40px #972974, 0 0 80px #972974;
+  position: relative;
+  /*  display: inline-block;*/
+
+}
+
+.szerda:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  cursor: url('media/apdtcur.png') 15 7.5, auto;
+}
+
+.szerda:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #da6fb8, 0 0 8px #da6fb8, 0 0 10px #da6fb8, 0 0 20px #da6fb8,
+    0 0 40px #da6fb8, 0 0 60px #da6fb8, 0 0 80px #da6fb8;
+}
+
+.gyules {
+  display: inline-block;
+  color: #000;
+  text-shadow: 0 0 2px #972974, 0 0 7px #972974, 0 0 13px #972974;
+  position: relative;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  text-shadow: none;
+  width: 80px;
+  height: 12px;
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 4;
+  bottom: 120%;
+  left: 65%;
+  margin-left: -50px;
+  opacity: 1;
+}
+
+.tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
+}
+
+a.kozgyules {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 2px #972974, 0 0 5px #972974, 0 0 8px #972974, 0 0 10px #972974, 0 0 20px #972974, 0 0 30px #972974;
+  font-weight: bold;
+  position: relative;
+}
+
+a.kozgyules:hover .tooltiptext {
+  color: pink;
+  visibility: visible;
+  opacity: 1;
+  cursor: url('media/apdtcur.png') 15 7.5, auto;
+}
+
+a.biztos {
+  color: #f0e1ed;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 5px #c0610f, 0 0 8px #c0610f, 0 0 10px #c0610f, 0 0 20px #c0610f,
+    0 0 40px #c0610f, 0 0 60px #c0610f, 0 0 80px #c0610f;
+}
+
+a.biztos:hover {
+  color: #fff;
+}
+
+a.biztos:hover .tooltiptext {
+  visibility: visible;
+  opacity:1;
+}
+
+a.nembiztos{
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  text-shadow: 0 0 5px #0f88c0, 0 0 8px #0f88c0, 0 0 10px #0f88c0, 0 0 20px #0f88c0,
+    0 0 40px #0f88c0, 0 0 60px #0f88c0, 0 0 80px #0f88c0;
+}
+a.nembiztos:hover {
+  color: #fff;}
+
+a.nembiztos:hover .tooltiptext {
+  visibility: visible;
+  opacity:1;
+}
+
+
+
+
+
+
+
+
+html,
+body {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  /* overflow-x: hidden !important; */
+}
+
+.container {
+  min-height: 100vh !important;
+}
