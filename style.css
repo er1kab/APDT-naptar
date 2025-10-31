@@ -182,10 +182,11 @@ body {
   width: 80px;
   height: 12px;
   font-size: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
   text-align: center;
-  border-radius: 4px;
+  /*border-radius: 4px; */
+  border: 1px solid white;
   padding: 5px 0;
   position: absolute;
   z-index: 4;
@@ -204,7 +205,7 @@ body {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
+  border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
 }
 
 a.kozgyules {
@@ -228,30 +229,37 @@ a.biztos {
   font-weight: bold;
   text-shadow: 0 0 5px #c0610f, 0 0 8px #c0610f, 0 0 10px #c0610f, 0 0 20px #c0610f,
     0 0 40px #c0610f, 0 0 60px #c0610f, 0 0 80px #c0610f;
+  position: relative;
+}
+
+a.biztos:hover .tooltiptext {
+  visibility: visible !important;
+  opacity: 1 !important;
+  cursor: url('media/apdtcur.png') 15 7.5, auto;
 }
 
 a.biztos:hover {
   color: #fff;
-}
+} 
 
-a.biztos:hover .tooltiptext {
-  visibility: visible;
-  opacity:1;
-}
 
-a.nembiztos{
+a.nembiztos {
   display: inline-block;
   color: #000;
   text-decoration: none;
   text-shadow: 0 0 5px #0f88c0, 0 0 8px #0f88c0, 0 0 10px #0f88c0, 0 0 20px #0f88c0,
     0 0 40px #0f88c0, 0 0 60px #0f88c0, 0 0 80px #0f88c0;
+  position: relative;
 }
+
 a.nembiztos:hover {
-  color: #fff;}
+  color: #fff;
+}
 
 a.nembiztos:hover .tooltiptext {
   visibility: visible;
-  opacity:1;
+  opacity: 1;
+  border:2px solid white;
 }
 
 
