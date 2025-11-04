@@ -1,59 +1,43 @@
 /* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
-
+ @font-face {
+    font-family: 'Luminari';
+    src: url(media/Luminari-Regular.woff) format('woff'); /*local('Luminari'), */
+    }
 
 
 body {
-  font-family: 'Courier', monospace;
+  font-family: 'Luminari', monospace, sans-serif; /*'Courier', monospace; */
+
   background-image: url('media/rightside.jpeg');
   width: 1024px;
   /* background-repeat: repeat-y;*/
   background-attachment: fixed;
   background-size: 1472px 1954px;
-  /* */
   background-position: center;
   cursor: url('media/apdtcur.png') 15 7.5, auto;
 
 }
 
-.apgif {
+a.apgif {
   width: auto;
   height: auto;
-  position: absolute;
+  /* position: absolute;
   display: block;
   top: 320px;
-  left: 20px;
+  left: 20px; */
   justify-content: center;
-  margin-right: 20px;
+  padding:20px;
   /*:5px solid black;*/
 
 }
 
-.apgif img {
+a.apgif img {
   filter: drop-shadow(0 0 11px rgb(62, 4, 4));
 }
 
-.apgif:hover img {
-  filter: drop-shadow(0 0 10px rgb(210, 101, 101));
-}
-
-.apgif2 {
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 320px;
-  right: 8px;
-  justify-content: center;
-  margin-right: 20px;
-  /*:5px solid black;*/
-}
-
-.apgif2 img {
-  filter: drop-shadow(0 0 11px rgb(62, 4, 4));
-}
-
-.apgif2:hover img {
+a.apgif:hover img {
   filter: drop-shadow(0 0 10px rgb(210, 101, 101));
 }
 
@@ -62,39 +46,54 @@ body {
   gap: 10px;
   padding: 10px;
   height: max-content;
-  /* border:5px solid black; */
-  position: absolute;
+ /* border:5px solid black;  */
+  /* position: absolute; */
   top: 300px;
-  left: auto;
+  /* left: auto; */
   z-index: 3
 }
 
-.container {
 
-  display: flex;
-  justify-content: center;
+
+
+.navcucc{	
+	margin:3px;
+	background-color:/* rgba(94, 105, 98, 0.6 )*/ rgba(101, 110, 100, 0.9);
+	border-style: double;
+  border-color:#000;
+	align-items:center;
+  padding: 5px;
+  margin:15px;
+  font-size: 20;
+  border-width: 5px;
+  color:rgb(237, 232, 223);
+}
+
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items:center;
+  /* border: 10px solid black; */
+ /* justify-content: center; */
   /* align-items:center; */
   /*  flex-wrap:nowrap;*/
   width: 964;
-  height: max-content;
+  min-height:max-content ;
 
 }
 
-
-
-.marquee {
-  width: 300px;
-  height: 600px;
-  margin: 10px auto 10px 10px;
-  border: 10px solid black;
-}
 
 .h1 {
-  color: #1e3a37;
+  color: #4c5d58;
   text-align: center;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 80px;
   text-decoration: underline;
+  padding:15px;
+  -webkit-text-stroke: 3px black;
 }
 
 .honapbox {
@@ -106,9 +105,9 @@ body {
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.7);
   margin: 30px auto;
-  border: 5px solid
-    /*#aabfb1*/
-    #938472;
+  border: 5px solid #ac9f91
+    /* #938472*/
+    ;
   BORDER-radius: 8px;
 }
 
@@ -185,6 +184,7 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
   text-align: center;
+  /*border-radius: 4px; */
   border: 1px solid white;
   padding: 5px 0;
   position: absolute;
@@ -280,5 +280,4 @@ body {
 
 .container {
   min-height: 100vh !important;
-
 }
