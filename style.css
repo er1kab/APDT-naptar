@@ -57,13 +57,12 @@ a.apgif:hover img {
 
 
 .navcucc{	
-	margin:3px;
+	margin:15px;
 	background-color:/* rgba(94, 105, 98, 0.6 )*/ rgba(101, 110, 100, 0.9);
 	border-style: double;
   border-color:#000;
 	align-items:center;
   padding: 5px;
-  margin:15px;
   font-size: 20;
   border-width: 5px;
   color:rgb(237, 232, 223);
