@@ -267,7 +267,7 @@ p.alja{
 ul.fekete{
   font-size:30px;
 }
-.navcucc{	font-size:30px;}
+.navcucc{	font-size:28px;}
 .container { grid-template-columns: "auto 1fr auto ";}
 .h1 {font-size: 115px;}
 .honapbox {
@@ -296,4 +296,5 @@ body {
 
 .container {
   min-height: 100vh !important;
+
 }
