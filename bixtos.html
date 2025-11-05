@@ -9,8 +9,8 @@
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
   <style>
     body {
-    	cursor: url('media/3kbapdt.png');
-		display:grid;
+      cursor: url('media/3kbapdt.png');
+      display:grid;
     }
     a.naptar{
     margin:10px;
@@ -42,7 +42,7 @@ a.naptar:hover{
     border-color:black;
     padding: 8px;
     margin:40px;
-    font-size: 20;
+    font-size: 20px;
     color:rgb(231, 227, 220);
     position:relative;
     
@@ -66,22 +66,29 @@ a.plussz:hover{
      color:white;
 }
 
+@media screen and (max-width:768px)
+{
+    .nav{font-size:35px;
+    }
+    a.rendz{font-size:40;}
+}
+
 
   </style>
 </head>
 <body>
-    <div class="h1" style="margin-top: 40px;">BIZTOS (IDŐPONTÚ) ESEMÉNYEK <!--RENDEZVÉNYEK--></div>
+     <a class="naptar" href="index.html">← Vissza a naptárhoz</a>
+    <div class="h1" style="margin-top: 40px;">BIZTOS (IDŐPONTÚ) ESEMÉNYEK<!--RENDEZVÉNYEK--></div>
     <p style="text-align: right; margin-right: 250px; margin-top:0px; font-size: 37px;"><b>(upcoming)</b></p>
-    <a class="naptar" href="index.html">← Vissza a naptárhoz</a>
-    <br>
     <div class="nav">Itt találhatóak azok a rendezvények, amelyeknek biztos-ami-biztos a dátum/időpontjuk, 
-        és további információk róluk.<br> Ezek vannak <a class="biztos">narancssárgával</a> jelölve a naptárban. :)  </div>
+        és további információk róluk.<br> Ezek vannak <a class="biztos">narancssárgával</a> jelölve a naptárban. :)  
+    </div>
         <img src="media/apdtlogo1.PNG" style="position:fixed; right:10px; bottom: 10px; width:50px;">
     <div class="nav">
         <ul style="list-style-type: '—○ ' ;">
             <li>
                 <p><a class="rendz" href="https://www.instagram.com/p/DQjoQlODKXX/?igsh=M3c2djFrMXQ5ZXZ5" target="_blank" >TÖK ÉS TEK </a></p>
-                    <ul style="color:black; list-style-type: '—○ ' ;">
+                    <ul class="fekete">
                         <li>
                             Ez egy tökfaragó verseny, bármely Apáczais, licis <a class="plussz" href="https://forms.gle/HciVLP3zus3Q5aQK9">jelentkezhet</a> (párral).
                         </li>
@@ -104,7 +111,7 @@ a.plussz:hover{
             </li>
             <li>
                 <p><a class="rendz">SZÍNES HÉTFŐK </a></p>
-                    <ul style="color:black; list-style-type: '—○ ' ;">
+                    <ul class="fekete">
                         <li>
                             November mindegyik hétfőjén az <a class="plussz" href="https://www.instagram.com/apaczaidt?igsh=Y3Zya3BoMWh2Y2kw" target="_blank">
                                 APDT insta</a>gram oldalán meghírdetett módon kell(ene) megjelenni suliba.
@@ -117,7 +124,7 @@ a.plussz:hover{
                         </li>
                         <li>
                             <b>Dátumok:</b>
-                                <ul style="color:black; list-style-type: '—○ ' ;">
+                                <ul class="fekete">
                                     <li> <a class="plussz" href="https://www.instagram.com/p/DQcCZ5njGaM/?igsh=a2NrYng2dHhobGhm" target="_blank">
                                         november 3 </a></li>
                                     <li>november 10</li>
@@ -129,7 +136,7 @@ a.plussz:hover{
             </li>
             <li>
                 <p><a class="rendz" href="https://www.instagram.com/p/DQjoQlODKXX/?igsh=M3c2djFrMXQ5ZXZ5" target="_blank" >ADVENTI JÓTÉKONYSÁGI VÁSÁR</a></p>
-                    <ul style="color:black; list-style-type: '—○ ' ;">
+                    <ul class="fekete">
                         <li>
                             Minden osztály készüljön a saját termékeivel, ötleteivel, az összegyűjtött pénzösszeg egy rászoruló ember támogatására megy.
                         </li>
@@ -149,6 +156,4 @@ a.plussz:hover{
     <br>
     
 </body>
-
 </html>
-

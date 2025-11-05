@@ -1,18 +1,15 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
+
  @font-face {
     font-family: 'Luminari';
-    src: url(media/Luminari-Regular.woff) format('woff'); /*local('Luminari'), */
+    src: url(media/Luminari-Regular.woff) format('woff'); 
     }
 
 
 body {
-  font-family: 'Luminari', monospace, sans-serif; /*'Courier', monospace; */
+  font-family: 'Luminari', monospace, sans-serif; 
 
   background-image: url('media/rightside.jpeg');
   width: 1024px;
-  /* background-repeat: repeat-y;*/
   background-attachment: fixed;
   background-size: 1472px 1954px;
   background-position: center;
@@ -23,13 +20,9 @@ body {
 a.apgif {
   width: auto;
   height: auto;
-  /* position: absolute;
-  display: block;
-  top: 320px;
-  left: 20px; */
   justify-content: center;
   padding:20px;
-  /*:5px solid black;*/
+
 
 }
 
@@ -41,15 +34,22 @@ a.apgif:hover img {
   filter: drop-shadow(0 0 10px rgb(210, 101, 101));
 }
 
+p.nav{
+  margin:7px; font-size:22px;
+}
+
+ul.fekete{
+  font-size:20px;
+  list-style-type: '—○ ' ;
+   color:black;
+}
+
 .kozep {
 
   gap: 10px;
   padding: 10px;
   height: max-content;
- /* border:5px solid black;  */
-  /* position: absolute; */
   top: 300px;
-  /* left: auto; */
   z-index: 3
 }
 
@@ -75,10 +75,6 @@ a.apgif:hover img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items:center;
-  /* border: 10px solid black; */
- /* justify-content: center; */
-  /* align-items:center; */
-  /*  flex-wrap:nowrap;*/
   width: 964;
   min-height:max-content ;
 
@@ -88,8 +84,7 @@ a.apgif:hover img {
 .h1 {
   color: #4c5d58;
   text-align: center;
-  /* font-weight: bold; */
-  font-size: 80px;
+  font-size: 85px;
   text-decoration: underline;
   padding:15px;
   -webkit-text-stroke: 3px black;
@@ -98,7 +93,7 @@ a.apgif:hover img {
 .honapbox {
   width: 600px;
   height: 300px;
-  background-image: url('media/red.jpg');
+  background-image: url('media/red600.jpg');
   background-repeat: no-repeat;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -129,7 +124,7 @@ a.apgif:hover img {
 .napok {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
+  gap: 9px;
   text-align: center;
   margin: 0px 10px 10px 10px;
   padding: 1rem 0;
@@ -138,10 +133,11 @@ a.apgif:hover img {
 .kurvajunius {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 7px;
+  column-gap: 7px;
+  row-gap: 4px;
   margin: 0px 10px 7px 10px;
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.7rem 0;
 }
 
 
@@ -151,7 +147,6 @@ a.apgif:hover img {
   color: #f0e1ed;
   text-shadow: 0 0 5px #972974, 0 0 10px #972974, 0 0 20px #972974, 0 0 40px #972974, 0 0 80px #972974;
   position: relative;
-  /*  display: inline-block;*/
 
 }
 
@@ -183,7 +178,6 @@ a.apgif:hover img {
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
   text-align: center;
-  /*border-radius: 4px; */
   border: 1px solid white;
   padding: 5px 0;
   position: absolute;
@@ -198,7 +192,6 @@ a.apgif:hover img {
   content: " ";
   position: absolute;
   top: 100%;
-  /* At the bottom of the tooltip */
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
@@ -259,8 +252,32 @@ a.nembiztos:hover .tooltiptext {
   opacity: 1;
   border:2px solid white;
 }
+p.alja{
+ font-size:20px;
+}
 
 
+
+@media screen and (max-width: 768px)
+{
+/* body{background-image: url(media/apdtlogo1.PNG);} */
+  p.nav{
+  margin:7px; font-size:32px;
+}
+ul.fekete{
+  font-size:30px;
+}
+.navcucc{	font-size:30px;}
+.container { grid-template-columns: "auto 1fr auto ";}
+.h1 {font-size: 115px;}
+.honapbox {
+  width: 700px;
+  height: 400px;
+background-image: url('media/red700.png');
+  background-repeat: no-repeat;}
+p.alja{font-size:22px;}
+
+}
 
 
 
