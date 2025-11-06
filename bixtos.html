@@ -47,7 +47,8 @@ a.naptar:hover{
     position:relative;
     
 }
- 
+
+
 a.rendz{
     text-decoration: underline;
     font-weight: bold;
@@ -56,6 +57,20 @@ a.rendz{
 }
 a.rendz:hover{
      color:white;
+}
+
+a.rendz{transition: transform 0.4s ease, color 0.4s ease;}
+
+.pop{transform:scale(1.2); color:red}
+
+.h2{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size:50px;
+    margin:30px;
+    margin-bottom: 50px;
+    color:rgb(231, 227, 220);
 }
 
 a.plussz{
@@ -78,39 +93,17 @@ a.plussz:hover{
 </head>
 <body>
      <a class="naptar" href="index.html">← Vissza a naptárhoz</a>
-    <div class="h1" style="margin-top: 40px;">BIZTOS (IDŐPONTÚ) ESEMÉNYEK<!--RENDEZVÉNYEK--></div>
-    <p style="text-align: right; margin-right: 180px; margin-top:0px; font-size: 37px;"><b>(upcoming)</b></p>
+    <div class="h1" style="margin-top: 40px;">BIZTOS (IDŐPONTÚ) ESEMÉNYEK</div>
+    <p style="text-align: right; margin-right: 180px; margin-top:0px; font-size: 27px;"><b>(upcoming+lejárt)</b></p>
     <div class="nav">Itt találhatóak azok a rendezvények, amelyeknek biztos-ami-biztos a dátum/időpontuk, 
         és további információk róluk.<br> Ezek vannak <a class="biztos">narancssárgával</a> jelölve a naptárban. :)  
     </div>
         <img src="media/apdtlogo1.PNG" style="position:fixed; right:10px; bottom: 10px; width:50px;">
     <div class="nav">
+        <div class="h2">UPCOMING</div>
         <ul style="list-style-type: '—○ ' ;">
             <li>
-                <p><a class="rendz" href="https://www.instagram.com/p/DQjoQlODKXX/?igsh=M3c2djFrMXQ5ZXZ5">TÖK ÉS TEK </a></p>
-                    <ul class="fekete">
-                        <li>
-                            Ez egy tökfaragó verseny, bármely Apáczais, licis <a class="plussz" href="https://forms.gle/HciVLP3zus3Q5aQK9">jelentkezhet</a> (párral).
-                        </li>
-                        <li>
-                           Hozzatok saját tököt, kést, kanalat, stb.
-                        </li>
-                        <li>
-                            A nagy munka közben megy <i>a tekno.</i>
-                        </li>
-                        <li>
-                            <b>Dátum</b>:november 6
-                        </li>
-                        <li>
-                            <b>Időpont</b>:16:00
-                        </li>
-                         <li>
-                            <b>Hely</b>:Apáczai, A27-es terem
-                         </li>
-                    </ul>
-            </li>
-            <li>
-                <p><a class="rendz">SZÍNES HÉTFŐK </a></p>
+                <p><a class="rendz" id="szines">SZÍNES HÉTFŐK </a></p>
                     <ul class="fekete">
                         <li>
                             November mindegyik hétfőjén az <a class="plussz" href="https://www.instagram.com/apaczaidt?igsh=Y3Zya3BoMWh2Y2kw" >
@@ -135,7 +128,7 @@ a.plussz:hover{
                     </ul>
             </li>
             <li>
-            <p><a class="rendz">A REFORMÁTUS KOLLÉGIUMOK DIÁKPRESBITÉRIUMAINAK TALÁLKOZÓJA</a></p>
+            <p><a class="rendz" id="arkdt">A REFORMÁTUS KOLLÉGIUMOK DIÁKPRESBITÉRIUMAINAK TALÁLKOZÓJA</a></p>
                     <ul class="fekete">
                         <li><i>Papp Hunor</i> iskolalelkésszel fogunk utazni, ő lesz a sofőr és a kísérőtanárunk.</li>
                         <li>
@@ -146,7 +139,7 @@ a.plussz:hover{
                         </li>
                          <li><details>
                             <summary>napirend</summary>
-                                <ul type="disc" style="font-size:large;">
+                                <ul type="disc" style="font-size:20px;">
                                     <li>csütörtök: érkezés 16 órától, 17:00 nyitó alkalom </li>
                                     <li>péntek: Előadások, diákpresbitériumok bemutatkozója, tervezés… este hazautazás</li>
                                 </ul>
@@ -156,7 +149,7 @@ a.plussz:hover{
             </li>
 
             <li>
-                <p><a class="rendz" href="https://www.instagram.com/p/DQjoQlODKXX/?igsh=M3c2djFrMXQ5ZXZ5" >ADVENTI JÓTÉKONYSÁGI VÁSÁR</a></p>
+                <p><a class="rendz" id="advent">ADVENTI JÓTÉKONYSÁGI VÁSÁR</a></p>
                     <ul class="fekete">
                         <li>
                             Minden osztály készüljön a saját termékeivel, ötleteivel.<!-- az összegyűjtött pénzösszeg egy ?? támogatására megy.-->
@@ -173,8 +166,40 @@ a.plussz:hover{
 
         </ul>
     </div>
+     <div class="nav"><details>
+                            <summary style="font-weight:normal">nemtudom miért, de raktam egy ilyet is<div class="h2">LEJÁRT</div></summary>
+                                 <ul style="list-style-type: '—○ ' ;">
+            <li>
+                <p><a class="rendz" href="https://www.instagram.com/p/DQjoQlODKXX/?igsh=M3c2djFrMXQ5ZXZ5" id="tok">TÖK ÉS TEK </a></p>
+                    <ul class="fekete">
+                        <li>
+                            Ez egy tökfaragó verseny, bármely Apáczais, licis <a class="plussz" title="ez már lejárt :(">jelentkezhet</a> (párral).
+                        </li>
+                        <li>
+                           Hozzatok saját tököt, kést, kanalat, stb.
+                        </li>
+                        <li>
+                            A nagy munka közben megy <i>a tekno.</i>
+                        </li>
+                        <li>
+                            <b>Dátum</b>:november 6
+                        </li>
+                        <li>
+                            <b>Időpont</b>:16:00
+                        </li>
+                         <li>
+                            <b>Hely</b>:Apáczai, A27-es terem
+                         </li>
+                    </ul>
+            </li>
+                            </details>
+        
+           
+
+
+    </div>
     
     <br>
-    
+  
 </body>
 </html>
