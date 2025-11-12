@@ -283,14 +283,14 @@ details {
 {
 /* body{background-image: url(media/apdtlogo1.PNG);} */
   p.nav{
-  margin:7px; font-size:32px;
+  margin:7px; font-size:25px;
 }
 ul.fekete{
-  font-size:30px;
+  font-size:20px;
 }
-.navcucc{	font-size:28px;}
+.navcucc{	font-size:25px;}
 .container { grid-template-columns: "auto 1fr auto ";}
-.h1 {font-size: 115px;}
+.h1 {font-size: 100px;}
 .honapbox {
   width: 700px;
   height: 400px;
