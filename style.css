@@ -19,7 +19,7 @@ body {
 
 a.apgif {
   width: auto;
-  height: auto;
+  height: 200px;
   justify-content: center;
   padding:20px;
 
@@ -317,4 +317,5 @@ body {
 
 .container {
   min-height: 100vh !important;
+
 }
