@@ -2,174 +2,155 @@
 <html lang="hu">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 "> <!--"width:1024px"*/-->
-  <title>APDT-naptar-biztos</title>
-  <link rel="shortcut icon" type="x-icon" href="media/apdtlogo1.png">
-  <link href="style.css" rel="stylesheet" type="text/css" media="all">
-  <style>
-    body {
-      cursor: url('media/3kbapdt.png');
-      display:grid;
-    }
-    a.naptar{
-    margin:10px;
-	background-color: rgba(101, 110, 100, 0.9);
-	border-style: double;
-	align-items:center;
-    border-width: 5px;
-    border-color:black;
-    padding: 5px;
-    font-size: 20;
-    color:rgb(231, 227, 220);
-    position:fixed;
-    top:0px;
-    z-index:1;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 "> <!--"width:1024px"*/-->
+    <title>APDT-naptar-biztos</title>
+    <link rel="shortcut icon" type="x-icon" href="media/apdtlogo1.png">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+        body {
+            cursor: url('media/3kbapdt.png');
+            display: grid;
+        }
 
-a.naptar:hover{
-        background-color: rgba(195, 202, 197, 0.9);
-        color:rgb(82, 88, 81);
-        /* text-shadow: 0 0 5px #333a36e6, 0 0 8px #333a36e6, 0 0 10px #333a36e6, 0 0 15px #333a36e6; */
+        a.naptar {
+            margin: 10px;
+            background-color: rgba(101, 110, 100, 0.9);
+            border-style: double;
+            align-items: center;
+            border-width: 5px;
+            border-color: black;
+            padding: 5px;
+            font-size: 20;
+            color: rgb(231, 227, 220);
+            position: fixed;
+            top: 0px;
+            z-index: 1;
+        }
 
-    }
+        a.naptar:hover {
+            background-color: rgba(195, 202, 197, 0.9);
+            color: rgb(82, 88, 81);
+            /* text-shadow: 0 0 5px #333a36e6, 0 0 8px #333a36e6, 0 0 10px #333a36e6, 0 0 15px #333a36e6; */
 
-.nav{
-	background-color: rgba(101, 110, 100, 0.9);
-	border-style: double;
-	align-items:center;
-    border-width: 5px;
-    border-color:black;
-    padding: 8px;
-    margin:40px;
-    font-size: 20px;
-    color:rgb(231, 227, 220);
-    position:relative;
-    
-}
+        }
 
+        .nav {
+            background-color: rgba(101, 110, 100, 0.9);
+            border-style: double;
+            align-items: center;
+            border-width: 5px;
+            border-color: black;
+            padding: 8px;
+            margin: 40px;
+            font-size: 20px;
+            color: rgb(231, 227, 220);
+            position: relative;
 
-a.rendz{
-    text-decoration: underline;
-    font-weight: bold;
-    font-size:22;
-    color:rgb(231, 227, 220);
-}
-a.rendz:hover{
-     color:white;
-}
-
-a.rendz{transition: transform 0.4s ease, color 0.4s ease;}
-
-.pop{transform:scale(1.2); color:red}
-
-.h2{
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size:50px;
-    margin:30px;
-    margin-bottom: 50px;
-    color:rgb(231, 227, 220);
-}
-
-a.plussz{
-    text-decoration:none;
-    color:rgb(231, 227, 220);
-}
-a.plussz:hover{
-     color:white;
-}
-
-@media screen and (max-width:768px)
-{
-    .nav{font-size:24px;
-    }
-    a.rendz{font-size:40;}
-}
+        }
 
 
-  </style>
+        a.rendz {
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 22;
+            color: rgb(231, 227, 220);
+        }
+
+        a.rendz:hover {
+            color: white;
+        }
+
+        a.rendz {
+            transition: transform 0.4s ease, color 0.4s ease;
+        }
+
+        .pop {
+            transform: scale(1.2);
+            color: red
+        }
+
+        .h2 {
+            text-align: center;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 50px;
+            margin: 30px;
+            margin-bottom: 50px;
+            color: rgb(231, 227, 220);
+        }
+
+        a.plussz {
+            text-decoration: none;
+            color: rgb(231, 227, 220);
+        }
+
+        a.plussz:hover {
+            color: white;
+        }
+
+        @media screen and (max-width:768px) {
+            .nav {
+                font-size: 24px;
+            }
+
+            a.rendz {
+                font-size: 40;
+            }
+        }
+    </style>
 </head>
+
 <body>
-     <a class="naptar" href="index.html">← Vissza a naptárhoz</a>
+    <a class="naptar" href="index.html">← Vissza a naptárhoz</a>
     <div class="h1" style="margin-top: 40px;">BIZTOS (IDŐPONTÚ) ESEMÉNYEK</div>
     <p style="text-align: right; margin-right: 180px; margin-top:0px; font-size: 27px;"><b>(upcoming+lejárt)</b></p>
-    <div class="nav">Itt találhatóak azok a rendezvények, amelyeknek biztos-ami-biztos a dátum/időpontuk, 
-        és további információk róluk.<br> Ezek vannak <a class="biztos">narancssárgával</a> jelölve a naptárban. :)  
+    <div class="nav">Itt találhatóak azok a rendezvények, amelyeknek biztos-ami-biztos a dátum/időpontuk,
+        és további információk róluk.<br> Ezek vannak <a class="biztos">kékkel</a> jelölve a naptárban. :)
     </div>
-        <img src="media/apdtlogo1.PNG" style="position:fixed; right:10px; bottom: 10px; width:50px;">
+    <img src="media/apdtlogo1.PNG" style="position:fixed; right:10px; bottom: 10px; width:50px;">
     <div class="nav">
         <div class="h2">UPCOMING</div>
         <ul style="list-style-type: '—○ ' ;">
-            <li>
-                <p><a class="rendz" id="szines">SZÍNES HÉTFŐK </a></p>
-                    <ul class="fekete">
-                        <li>
-                            November mindegyik hétfőjén az <a class="plussz" href="https://www.instagram.com/apaczaidt?igsh=Y3Zya3BoMWh2Y2kw" >
-                                APDT insta</a>gram oldalán meghírdetett módon kell(ene) megjelenni suliba.
-                        </li>
-                        <li>
-                           Csináljatok az osztállyal egy képet, ezt küldjétek el nekünk a formsban.
-                        </li>
-                        <li>
-                            Az az osztály, amely a legszínesebb, legkréatívabb választja a következő színes hétfő mintáját.
-                        </li>
-                        <li>
-                            <b>Dátumok:</b>
-                                <ul class="fekete">
-                                    <li> <a class="plussz" href="https://www.instagram.com/p/DQcCZ5njGaM/?igsh=a2NrYng2dHhobGhm">
-                                        november 3 </a></li>
-                                    <li><a class="plussz" href="https://www.instagram.com/p/DQzf5jlDKAj/?igsh=MXB0MXVoOWNuOTlyeg==">november 10 </a></li>
-                                    <li><a class="plussz" href="https://www.instagram.com/p/DRHAyx_DBLr/?igsh=aWQ3bmZscWM2eXRq" >november 17</a></li>
-                                    <li><a class="plussz" href="https://www.instagram.com/p/DRUcOD5jOx6/?igsh=czBjZzZjc2sya2Fn" >november 24</a></li>
-                                </ul>
-                        </li>
-                    </ul>
-            </li>
-           <li>
-                <p><a class="rendz" href="https://www.instagram.com/p/DRMxYyCDC7v/?igsh=eXNrMnk2anQyOTRz" id="ajtajj">AJTAJ JANKA - FENNTARTHATÓSÁG WORKSHOP</a></p>
-                    <ul class="fekete">
-                        <li>
-                            <b>Dátum</b>:november 25, kedd
-                        </li>
-                        <li>
-                            <b>Időpont</b>: 16:30
-                        </li>
-                         <li>
-                            <b>Hely</b>: Planetárium café
-                         </li>
+
+        </ul>
+       
+        <li>
+            <p><a class="rendz" id="advent">ADVENTI JÓTÉKONYSÁGI VÁSÁR</a></p>
+            <ul class="fekete">
+                <li>
+                    Minden osztály készüljön a saját termékeivel,
+                    ötleteivel.<!-- az összegyűjtött pénzösszeg egy ?? támogatására megy.-->
+                </li>
+                <li>
+                    Lesz <i>tombola</i>! A nap folyamán alkalmatok lesz tombolajegyeket vásárolni.
+                </li>
+                <li>
+                    <b>Dátum</b>:december 19
+                </li>
             </ul>
-            </li> 
-            <li>
-                <p><a class="rendz" id="advent">ADVENTI JÓTÉKONYSÁGI VÁSÁR</a></p>
-                    <ul class="fekete">
-                        <li>
-                            Minden osztály készüljön a saját termékeivel, ötleteivel.<!-- az összegyűjtött pénzösszeg egy ?? támogatására megy.-->
-                        </li>
-                        <li>
-                            Lesz <i>tombola</i>! A nap folyamán alkalmatok lesz tombolajegyeket vásárolni.
-                        </li>
-                        <li>
-                            <b>Dátum</b>:december 19
-                        </li>  
-            </ul>
-            </li>                
-                            
+        </li>
+
 
         </ul>
     </div>
-     <div class="nav"><details>
-                            <summary style="font-weight:normal"><span style="font-size:large">nemtudom miért, de raktam egy ilyet is</span><div class="h2">LEJÁRT</div></summary>
-                                 <ul style="list-style-type: '—○ ' ;">
-            <li>
-                <p><a class="rendz" href="https://www.instagram.com/p/DQjoQlODKXX/?igsh=M3c2djFrMXQ5ZXZ5" id="tok">TÖK ÉS TEK </a></p>
+    <div class="nav">
+        <details>
+            <summary style="font-weight:normal"><span style="font-size:large">nemtudom miért, de raktam egy ilyet
+                    is</span>
+                <div class="h2">LEJÁRT</div>
+            </summary>
+            <ul style="list-style-type: '—○ ' ;">
+                <li>
+                    <p><a class="rendz" href="https://www.instagram.com/p/DQjoQlODKXX/?igsh=M3c2djFrMXQ5ZXZ5"
+                            id="tok">TÖK ÉS TEK </a></p>
                     <ul class="fekete">
                         <li>
-                            Ez egy tökfaragó verseny, bármely Apáczais, licis <a class="plussz" title="ez már lejárt :(">jelentkezhet</a> (párral).
+                            Ez egy tökfaragó verseny, bármely Apáczais, licis <a class="plussz"
+                                title="ez már lejárt :(">jelentkezhet</a> (párral).
                         </li>
                         <li>
-                           Hozzatok saját tököt, kést, kanalat, stb.
+                            Hozzatok saját tököt, kést, kanalat, stb.
                         </li>
                         <li>
                             A nagy munka közben megy <i>a tekno.</i>
@@ -180,13 +161,13 @@ a.plussz:hover{
                         <li>
                             <b>Időpont</b>:16:00
                         </li>
-                         <li>
+                        <li>
                             <b>Hely</b>:Apáczai, A27-es terem
-                         </li>
+                        </li>
                     </ul>
-            </li>
-             <li>
-            <p><a class="rendz" id="arkdt">A REFORMÁTUS KOLLÉGIUMOK DIÁKPRESBITÉRIUMAINAK TALÁLKOZÓJA</a></p>
+                </li>
+                <li>
+                    <p><a class="rendz" id="arkdt">A REFORMÁTUS KOLLÉGIUMOK DIÁKPRESBITÉRIUMAINAK TALÁLKOZÓJA</a></p>
                     <ul class="fekete">
                         <li><i>Papp Hunor</i> iskolalelkésszel fogunk utazni, ő lesz a sofőr és a kísérőtanárunk.</li>
                         <li>
@@ -195,25 +176,73 @@ a.plussz:hover{
                         <li>
                             <b>Helyszín</b>: Zeteváralja
                         </li>
-                         <li><details>
-                            <summary>napirend</summary>
+                        <li>
+                            <details>
+                                <summary>napirend</summary>
                                 <ul type="disc" style="font-size:20px;">
                                     <li>csütörtök: érkezés 16 órától, 17:00 nyitó alkalom </li>
-                                    <li>péntek: Előadások, diákpresbitériumok bemutatkozója, tervezés… este hazautazás</li>
+                                    <li>péntek: Előadások, diákpresbitériumok bemutatkozója, tervezés… este hazautazás
+                                    </li>
                                 </ul>
                             </details>
                         </li>
                     </ul>
-            </li>
+                </li>
 
-                            </details>
-        
-           
+
+                <li>
+                    <p><a class="rendz" id="szines">SZÍNES HÉTFŐK </a></p>
+                    <ul class="fekete">
+                        <li>
+                            November mindegyik hétfőjén az <a class="plussz"
+                                href="https://www.instagram.com/apaczaidt?igsh=Y3Zya3BoMWh2Y2kw">
+                                APDT insta</a>gram oldalán meghírdetett módon kell(ene) megjelenni suliba.
+                        </li>
+                        <li>
+                            Csináljatok az osztállyal egy képet, ezt küldjétek el nekünk a formsban.
+                        </li>
+                        <li>
+                            Az az osztály, amely a legszínesebb, legkréatívabb választja a következő színes hétfő
+                            mintáját.
+                        </li>
+                        <li>
+                            <b>Dátumok:</b>
+                            <ul class="fekete">
+                                <li> <a class="plussz"
+                                        href="https://www.instagram.com/p/DQcCZ5njGaM/?igsh=a2NrYng2dHhobGhm">
+                                        november 3 </a></li>
+                                <li><a class="plussz"
+                                        href="https://www.instagram.com/p/DQzf5jlDKAj/?igsh=MXB0MXVoOWNuOTlyeg==">november
+                                        10 </a></li>
+                                <li><a class="plussz"
+                                        href="https://www.instagram.com/p/DRHAyx_DBLr/?igsh=aWQ3bmZscWM2eXRq">november
+                                        17</a></li>
+                                <li><a class="plussz"
+                                        href="https://www.instagram.com/p/DRUcOD5jOx6/?igsh=czBjZzZjc2sya2Fn">november
+                                        24</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><a class="rendz" href=""id="miku"> SULIBAN ALVÁS ÉS MIKULÁSOZÁS</a></p>
+                    <ul class="fekete">
+                        <li>
+                            <b>Dátum</b>: december 4-5(csütörtök-péntek)
+                        </li>
+                        <li>
+                            <b>Időpont</b>: 17:30-tól tali, 18:00-kor kezdosik a mikulasozas!!
+                        </li>
+                 </li>
+        </details>
+
+
 
 
     </div>
-    
+
     <br>
-  
+
 </body>
+
 </html>
